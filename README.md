@@ -6,6 +6,30 @@ Part Pay was created to make managing payroll and part-time scheduling easier. D
 
 <img src= "https://github.com/pavankumarchebelli/PartPay_Demo/blob/main/Screenshots/architecture.png" width =600px height= 337px>
 
+<h3>Main Features: </h3>
+
+1. **User Authentication**:
+
+   - Users can sign up and log in to the application.
+   - There are three types of users like Part Time Employee, Manager and Admin
+   - Passwords are stored securely in the SQLite database.
+
+2. **TimeSheets**:
+   - The application includes a page where employees can clock in and clock out.
+   - Users can directly give the clock and clock out time or we can start the timer and end it when shift is completed.
+
+3. **Database**:
+   - The application uses a SQLite database to all the employee related information.
+   - It includes all the shift details and employee username and password details
+
+4. **PayRoll**:
+   - The application also has a payroll generation feature based on the shifts scheduled and their clockout times.
+   - Here they can include taxes when generation which can be decided by manager.
+
+5. **Swap and Overtime Requests**
+   - In this application an employee can request for a swap based on the manager's approval
+   - If they work overtime then they need an overtime approval as well to make it count.
+
 ## PartPay Installation
 
 ### Prerequisites
@@ -79,3 +103,7 @@ Part Pay was created to make managing payroll and part-time scheduling easier. D
 - **Bcrypt**: A library to help you hash passwords.
 - **CORS**: Package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 - **JSON Web Token**: A compact URL-safe means of representing claims to be transferred between two parties.
+
+<h3>Contributions</h3>
+
+Contributions to the PartPay project are welcome. If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
